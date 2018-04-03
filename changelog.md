@@ -93,3 +93,4 @@
 * set up GitHub repo properly
 * re-validate html and css files
 * fix package.json with new startup script
+* change some console.errors to window.alerts

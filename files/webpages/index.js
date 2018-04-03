@@ -67,7 +67,7 @@ async function submitWeek() {
 
   // stops the weekNo increment in case these parameters are omitted
   if (!weekNoEl.value || !lecTopEl.value || !labTopEl.value) {
-    console.log('Week number, lecture and lab topic required.');
+    window.alert('Must provide week number, lecture and lab topics.');
     lecTopEl.focus();
     return;
   }
@@ -88,8 +88,18 @@ async function submitWeek() {
 async function requestUpdate(e) {
   const elToUpdate = e.target.parentElement;
 
+  // ensure valid values are provided when updating a week
   if (!elToUpdate) {
     console.error('elToUpdate not provided');
+    return;
+  } else if (elToUpdate.querySelector('p.weekNoT').textContent <= 0 ||
+    elToUpdate.querySelector('p.weekNoT').textContent > 24) {
+    window.alert('Week number must be between 1 and 24.');
+    return;
+  } else if (!elToUpdate.querySelector('p.weekNoT').textContent ||
+    !elToUpdate.querySelector('p.lecTopicT').textContent ||
+    !elToUpdate.querySelector('p.labTopicT').textContent) {
+    window.alert('Must provide week number, lecture and lab topics.');
     return;
   }
 
