@@ -27,7 +27,7 @@ To start the app, type into the terminal:
 ```
 npm run dashboard
 ```
-Then go to your browser and access from either [localhost:8080](http://localhost:8080) or [172.0.0.1:8080](http://172.0.0.1:8080).
+Then go to your browser and access from either [localhost:8080](http://localhost:8080) or [127.0.0.1:8080](http://127.0.0.1:8080).
 
 #### Create a week
 
