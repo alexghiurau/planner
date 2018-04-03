@@ -63,7 +63,7 @@
 
 * can now change week number of a week without getting undefined error
 
-# 27/03/2018
+## 27/03/2018
 
 * code for units temporarily removed
 * style.css changes for QoL
