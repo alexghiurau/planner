@@ -60,7 +60,7 @@ This section is a reflection on the decisions I have made for this project, cons
 
 #### Design choices
 
-In terms of visual design, I decided to "recycle" my WEBF1 website and have used it for this project. The colour scheme and navigation bar remained the same. I believe the current design is simple and accessible and on par with other material design implementations. At first I wanted to use the Boostrap library for its grid and nicely styled elements, but I thought by doing it myself I would learn new things. It is also not justified loading the Boostrap and jQuery library just for this.
+In terms of visual design, I decided to "recycle" my WEBF1 website and have used it for this project. The colour scheme and navigation bar remained the same. I believe the current design is simple and accessible and on par with other material design implementations. At first I wanted to use the Bootstrap library for its grid and nicely styled elements, but I thought by doing it myself I would learn new things. It is also not justified loading the Bootstrap and jQuery library just for this.
 
 I wanted the app to use grid because it is a new feature of CSS and supported in the modern popular browsers. I have found it very easy to use (even easier than Bootstrap's grid) and for me it has worked very well. I could have achieved the same by using div elements for each week created, but in my opinion this is much cleaner. By using grid I learned that I can use repeat() instead of writing out the grid fractions which is much more efficient and looks cleaner. I have used the html template element to create a template which could later be used by Javascript to create new weeks asynchronously.
 
@@ -88,7 +88,7 @@ I checked to see if my app used HTML5 and CSS3 using the websites HTML5 and CSS3
 
 I liked the idea of having multiple weeks which could be created, edited and deleted by the user. I have created those using section html elements and used css grid to lay them out evenly in the page. To post and get weeks was not very challenging to implement, I think the most challenging bit was editing a week. I used the "contenteditable" property in html which simplified things (no need for an extra form) but it took me a while to understand how to implement this feature using Javascript, especially editing the week number. To solve this I was helped and found out that I could use _e.target.parentElement_ instead of looping through the child elements of main.
 
- Currently the new week form is in the same page as the weeks and in the future I would handle this differently, because I don't think the form is very appealing at the moment - maybe hide it in a similar manner to Boostrap's modals. Also styling the form was a little challenging as there are many ways to do it, but I decided to keep it simple and not use fancy CSS on it. My aim was to have the input elements accessible and large enough to see on different screens.
+ Currently the new week form is in the same page as the weeks and in the future I would handle this differently, because I don't think the form is very appealing at the moment - maybe hide it in a similar manner to Bootstrap's modals. Also styling the form was a little challenging as there are many ways to do it, but I decided to keep it simple and not use fancy CSS on it. My aim was to have the input elements accessible and large enough to see on different screens.
 
 #### Accessibility / Usability
 
