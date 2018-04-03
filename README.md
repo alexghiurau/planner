@@ -3,7 +3,7 @@
 A planning tool web app that allows users to create units and add weeks to these,
 along with lecture, lab, seminar topics, resources and notes. A reflection upon this work can be found towards the end of this document.
 
-**Note:** It seems all my commits on GitHub have my real name, therefore I will keep the repository private to remain anonymous.
+**Note:** GitHub showed my real name on all commits so I had to remake the repository, therefore it will not have many commits.
 
 ## Prerequisites
 
