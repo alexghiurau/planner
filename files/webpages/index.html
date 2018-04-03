@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<meta charset="utf-8">
+<title>Planner</title>
+<link href="style.css" rel="stylesheet" title="Default">
+<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+
+<nav>
+  <p id="navTitle">WebScript Planner</p>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+  </ul>
+</nav>
+
+<section>
+  <form class="addWeekForm" id="addWeekForm" method="post">
+    <select id="weekNo" name="weekNo">
+      <option value="" disabled selected>Week Number</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+      <option value="13">13</option>
+      <option value="14">14</option>
+      <option value="15">15</option>
+      <option value="16">16</option>
+      <option value="17">17</option>
+      <option value="18">18</option>
+      <option value="19">19</option>
+      <option value="20">20</option>
+      <option value="21">21</option>
+      <option value="22">22</option>
+      <option value="23">23</option>
+      <option value="24">24</option>
+    </select>
+    <input type="text" name="lecTopic" id="lecTopic" placeholder=" Lecture Topic">
+    <input type="text" name="labTopic" id="labTopic" placeholder=" Lab Topic">
+    <input type="text" name="semTopic" id="semTopic" placeholder=" Seminar Topic (Optional)">
+    <textarea name="resources" id="resources" placeholder=" Resources / Notes (Optional)"></textarea>
+    <button type="button" id="submit" name="buttonSubmitWeek">Submit</button>
+  </form>
+</section>
+
+<main class="loading">
+  <p class="loading">loading...</p>
+  <p class="error">sorry, could not load data...</p>
+</main>
+
+<template id="week_t">
+  <section class="week">
+    <div class="delete" data-id="error">X</div>
+    <div class="save" data-id="error">✓</div>
+    <p class="weekInLine">Week:</p><p class="weekNoT" contenteditable="true">error</p>
+    <p class="weekInLine">Lecture Topic:</p><p class="lecTopicT" contenteditable="true">error</p>
+    <p class="weekInLine">Lab Topic:</p><p class="labTopicT" contenteditable="true">error</p>
+    <p class="weekInLine">Seminar Topic:</p><p class="semTopicT" contenteditable="true">error</p>
+    <p class="weekInLine">Resources / Notes:</p><p class="resourcesT" contenteditable="true">error</p>
+  </section>
+</template>
+
+<script src="index.js"></script>
+
+<footer>
+  <p>Copyright UP786633.</p>
+</footer>
+
+</html>
