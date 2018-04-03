@@ -19,7 +19,7 @@ To set up the database (MySQL service must be running):
 ```
 npm run initsql
 ```
-The current user is _localhost_ and password is _root_ for compatibility. This can be changed in the config.js file. Also note that running this script deletes the database if it already exists. **Do not** use this script unless you are sure you want to delete the database if it exists already.
+The current user is _localhost_ and password is _root_ for compatibility. This can be changed in the config.js file. Also note that running this script deletes the database if it already exists. Only use this script if you are sure you want to delete the database if it exists already.
 
 ## Usage
 
@@ -27,7 +27,7 @@ To start the app, type into the terminal:
 ```
 npm run dashboard
 ```
-Then go to your browser and access from either [localhost:8080](localhost:8080) or [172.0.0.1:8080](172.0.0.1:8080).
+Then go to your browser and access from either [localhost:8080](http://localhost:8080) or [172.0.0.1:8080](http://172.0.0.1:8080).
 
 #### Create a week
 
